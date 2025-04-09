@@ -6,7 +6,7 @@ sidebar_position: 14
 ---
 
 <div align="center">
-  <img src="https://apipie.ai/docs/img/Features/pooling-banner.png" alt="Inline CLI Feature Banner" width="100%" />
+  <img src="https://apipie.ai/docs/img/Features/inlinecli-banner.png" alt="Inline CLI Feature Banner" width="100%" />
 </div>
 
 Unlock powerful real-time API control with **Inline CLI** – a breakthrough feature built directly into your prompt flow. This innovation enables developers to dynamically apply API configurations within user input, empowering advanced AI behavior with a single line of text.
