@@ -2,7 +2,7 @@
 id: inline-cli
 title: Inline CLI
 slug: /inline-cli
-sidebar_position: 3
+sidebar_position: 14
 ---
 
 <div align="center">
