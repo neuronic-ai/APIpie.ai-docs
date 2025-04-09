@@ -66,9 +66,9 @@ curl -X POST 'https://apipie.ai/v1/chat/completions' \
 
 | Value  | Description                                 |
 |--------|---------------------------------------------|
-| `low`  | Small content injection (~1–2 links)        |
-| `medium` | Moderate (~3–4 results, ~3–5K characters) |
-| `high` | Full web grounding (~5–6 results, ~10K+)    |
+| `low`  | Small content injection (~1 result up to 10k characters)        |
+| `medium` | Moderate (~3 results, ~15K characters) |
+| `high` | Full web grounding (~5 results, ~35K characters)    |
 
 ---
 
@@ -111,9 +111,9 @@ You can also enable search directly in the prompt with these Inline CLI commands
 
 | Command         | Behavior                             |
 |----------------|--------------------------------------|
-| `:search`       | Fast search (1 query, 3 results)     |
-| `:searchmore`   | More results (1 query, 5 results)    |
-| `:deepsearch`   | Broad + deep search (3 queries)      |
+| `:search`       | Fast search (1 query, 1 results)     |
+| `:searchmore`   | More results (2 query, 3 results)    |
+| `:deepsearch`   | Broad + deep search (3 queries, 5 results)      |
 | `:setsearchlang:en` | Set language to English          |
 | `:setsearchgeo:US`  | Set geo location to United States|
 
