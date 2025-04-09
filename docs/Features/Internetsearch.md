@@ -1,7 +1,7 @@
 ---
 id: search
-title: Inline Search
-slug: /search
+title: Search Grounding
+slug: /internetsearch
 sidebar_position: 15
 ---
 
