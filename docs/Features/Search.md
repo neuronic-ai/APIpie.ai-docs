@@ -6,7 +6,7 @@ sidebar_position: 15
 ---
 
 <div align="center">
-  <img src="https://apipie.ai/docs/img/Features/pooling-banner.png" alt="Search Feature Banner" width="100%" />
+  <img src="https://apipie.ai/docs/img/Features/search-banner.png" alt="Search Feature Banner" width="100%" />
 </div>
 
 Enable any model to answer with real-time, verifiable information using **Inline Search** — our built-in web search and grounding system that works seamlessly with OpenAI-compatible APIs. With a single request, you can inject live context from the internet into your prompt, no browser tools, agents, or plugins required.
