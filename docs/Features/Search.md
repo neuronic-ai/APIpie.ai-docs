@@ -41,7 +41,7 @@ This allows even legacy models to answer with fresh knowledge, and it works **au
 
 Use `web_search_options` in your request to instantly enable Inline Search.
 
-'''bash
+```bash
 curl -X POST 'https://apipie.ai/v1/chat/completions' \
 -H 'Authorization: Bearer <API_KEY>' \
 -H 'Content-Type: application/json' \
@@ -60,7 +60,7 @@ curl -X POST 'https://apipie.ai/v1/chat/completions' \
     }
   ]
 }'
-'''
+```
 
 ### Options for `web_search_options.search_context_size`
 
@@ -86,7 +86,7 @@ You can also enable search with deeper control using the `online` flag and exten
 | `search_lang`   | Language code for results (e.g. `"en"`)                    |
 | `search_geo`    | Geolocation code (e.g. `"US"`)                             |
 
-'''json
+```json
 {
   "user": "user123",
   "model": "claude-3-5-sonnet",
@@ -101,7 +101,7 @@ You can also enable search with deeper control using the `online` flag and exten
     { "role": "user", "content": "Summarize the most recent news about generative AI in healthcare." }
   ]
 }
-'''
+```
 
 ---
 
@@ -119,9 +119,9 @@ You can also enable search directly in the prompt with these Inline CLI commands
 
 Example prompt:
 
-'''json
+```json
 { "content": "Summarize today’s major AI headlines :deepsearch :setsearchlang:en :setsearchgeo:US" }
-'''
+```
 
 ---
 
@@ -131,7 +131,7 @@ For users needing lower-level control or standalone search capabilities, we also
 
 ### POST `/v1/search`
 
-'''json
+```json
 {
   "query": "latest AI developments",
   "search_provider": "google",
@@ -142,7 +142,7 @@ For users needing lower-level control or standalone search capabilities, we also
   "safeSearch": -1,
   "user": "user123"
 }
-'''
+```
 
 Returns a list of ranked search results with URLs, titles, and descriptions.
 
@@ -150,12 +150,12 @@ Returns a list of ranked search results with URLs, titles, and descriptions.
 
 ### POST `/v1/scrape`
 
-'''json
+```json
 {
   "url": "https://example.com/article",
   "format": "parsed"
 }
-'''
+```
 
 Returns parsed content:
 
@@ -178,7 +178,7 @@ Returns parsed content:
 
 ## Example: High-Precision Search
 
-'''bash
+```bash
 curl -X POST 'https://apipie.ai/v1/chat/completions' \
 -H 'Authorization: Bearer <API_KEY>' \
 -H 'Content-Type: application/json' \
@@ -196,7 +196,7 @@ curl -X POST 'https://apipie.ai/v1/chat/completions' \
     { "role": "user", "content": "What are the leading companies developing open-source LLMs in 2025?" }
   ]
 }'
-'''
+```
 
 ---
 
