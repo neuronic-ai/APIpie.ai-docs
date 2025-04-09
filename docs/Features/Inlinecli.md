@@ -26,10 +26,10 @@ Use one of the following authentication methods:
 
 Example headers:
 
-''http
+'''http
 Authorization: Bearer <YOUR_API_KEY>
 x-api-key: <YOUR_API_KEY>
-''
+'''
 
 ## Enabling Inline CLI
 
@@ -41,9 +41,9 @@ Inline CLI is controlled via the `inline_cli` field in the request body. You can
 
 Example:
 
-''json
+'''json
 "inline_cli": "model,shaping,integrity"
-''
+'''
 
 ## How Inline CLI Works
 
@@ -152,7 +152,7 @@ Persistent conversational memory:
 
 ## Example Prompt Usage
 
-''bash
+'''bash
 curl -X POST 'https://apipie.ai/v1/chat/completions' \
 -H 'Authorization: Bearer <API_KEY>' \
 -H 'Content-Type: application/json' \
@@ -163,7 +163,7 @@ curl -X POST 'https://apipie.ai/v1/chat/completions' \
     { "role": "user", "content": "Tell me a fun fact :becreative :answerwithclaude" }
   ]
 }'
-''
+'''
 
 ---
 
